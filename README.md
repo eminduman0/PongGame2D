@@ -11,4 +11,4 @@ This project is a 2D game made with Unity.
 2. Open the project with Unity Hub.
 3. Run the game.
 ## Version
-• v0.1 – First small release
+- v0.1 – First small release
