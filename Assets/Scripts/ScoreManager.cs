@@ -19,14 +19,17 @@ public class ScoreManager : MonoBehaviour
 
     public void PlayAgain()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void MainMenu()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        AudioManager.instance.PlayMusic(AudioManager.instance.mainMenuMusic);
     }
     public void AddScorePlayer1()
     {
