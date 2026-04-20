@@ -1045,6 +1045,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1747345383382440359, guid: 7c11048e7f1dea949b798fefdc70ef0b, type: 3}
+      propertyPath: m_Color.a
+      value: 0.019607844
+      objectReference: {fileID: 0}
     - target: {fileID: 2521807567784549652, guid: 7c11048e7f1dea949b798fefdc70ef0b, type: 3}
       propertyPath: m_Name
       value: SettingsPanel
@@ -1876,7 +1880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.07450981}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.019607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2548,7 +2552,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 134.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2751,6 +2755,7 @@ GameObject:
   - component: {fileID: 725210961}
   - component: {fileID: 725210960}
   - component: {fileID: 725210959}
+  - component: {fileID: 725210964}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Paddle
@@ -2920,6 +2925,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 308032337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &725210964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725210958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01162e47fcba23e4e9024aa601320b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIPaddle
+  ball: {fileID: 1338867535}
+  speed: 0
 --- !u!1 &820137815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,7 +4551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.07450981}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.019607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

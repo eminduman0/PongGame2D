@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     float move;
     void Update()
     {
+        if (!isPlayer1 && GameSettings.isSinglePlayer) return;
+
         if (isPlayer1)
             move = Input.GetAxisRaw("VerticalPlayer2");
         else

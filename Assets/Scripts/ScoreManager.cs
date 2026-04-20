@@ -39,7 +39,10 @@ public class ScoreManager : MonoBehaviour
 
         if (player1Score >= maxScore)
         {
-            GameWin("Player 1 Wins!");
+            if (GameSettings.isSinglePlayer)
+                GameWin("You Win!");
+            else
+                GameWin("Player 1 Wins!");
         }
     }
 
@@ -51,7 +54,10 @@ public class ScoreManager : MonoBehaviour
 
         if (player2Score >= maxScore)
         {
-            GameWin("Player 2 Wins!");
+            if (GameSettings.isSinglePlayer)
+                GameWin("AI Wins!");
+            else
+                GameWin("Player 2 Wins!");
         }
     }
 
